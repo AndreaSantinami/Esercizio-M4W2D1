@@ -1,0 +1,139 @@
+/* Stile generale (tema scuro) */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212; /* Sfondo scuro */
+    color: #f8f9fa; /* Testo chiaro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar (tema scuro) */
+.navbar {
+    background-color: #1f1f1f;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #ffdd57;
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    padding: 2px;
+}
+
+/* Sezione principale */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Layout card (tema scuro) */
+.photo-item {
+    display: flex;
+    flex-direction: row; /* Immagine accanto alla descrizione */
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #333333; /* Bordo scuro */
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.photo-item img {
+    width: 50%; /* L'immagine occupa metà della larghezza */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Descrizione delle card */
+.photo-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    color: #f8f9fa;
+}
+
+.photo-description h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.photo-description p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* Carousel */
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Mosaico di immagini */
+#mosaic-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsivo */
+    grid-gap: 0; /* Nessuno spazio tra le immagini */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#mosaic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adatta l'immagine al contenitore */
+    border: 0; /* Rimuove i bordi */
+    margin: 0; /* Rimuove margini */
+    padding: 0; /* Rimuove padding */
+    transition: transform 0.3s;
+}
+
+#mosaic-container img:hover {
+    transform: scale(1.05); /* Effetto zoom */
+}
+
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+}
